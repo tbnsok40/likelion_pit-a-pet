@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p>{{myprofile.pet_image}}</p> -->
+    <p>PET 이름: {{myprofile.pet_name}} </p>
+    <p>PET 종류: {{myprofile.pet_type}}</p>
+    <p>PET 나이: {{myprofile.pet_age}} 세</p>
+    <p>펫 소개:{{myprofile.pet_intro}} </p>
+    <p>친한친구: 42 마리 </p>
+
+    <a href ="{% url 'myprofile' %}"><input type="submit" value="돌아가기"></a> 
+    
+</body>
+</html>

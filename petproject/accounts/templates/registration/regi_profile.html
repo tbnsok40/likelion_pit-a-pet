@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>프로필 생성</title>
+</head>
+<body>
+    <h1>프로필 생성</h1>
+    <form method="POST" >  
+        {% csrf_token %}        
+        <!-- url 불러올때, post방식에서는 csrf공격을 막기위한 token을 같이 첨부 -->
+    {{regi_profile_form.as_p}} 
+    <!-- form을 p형식으로 -->
+    <a href ="{% url 'myprofile' %}"><input type="submit" value="등록하기"></a>     
+    </form>
+</body>
+</html>
