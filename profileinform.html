@@ -1,0 +1,57 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/703c3b8202.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="{% static 'css/profileinform.css' %}?v=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="form2">
+        <h1>Profile</h1>
+        <p>이름 : {{myprofile.pet_name}} </p>
+        <p>종류 : {{myprofile.pet_type}}</p>
+        <p>나이 : {{myprofile.pet_age}} 세</p>
+        <p>소개 : {{myprofile.pet_intro}} </p>
+        <p>친구 : 42 마리 </p>
+        <a href="{% url 'myprofile' %}"><input type="submit" value="돌아가기"></a>
+    </div>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__list-item">
+                <a href="profile.html">
+                    <i class="far fa-user"></i>
+                </a>
+            </li>
+            <li class="nav__list-item">
+                <a href="matching.html">
+                    <i class="fas fa-comment"></i>
+                </a>
+            </li>
+            <li class="nav__list-item">
+                <a href="home.html">
+                    <i class="fas fa-home"></i>
+                </a>
+            </li>
+            <li class="nav__list-item">
+                <a href="map.html">
+                    <i class="fas fa-map-marked-alt"></i>
+                </a>
+            </li>
+            <li class="nav__list-item">
+                <a href="info.html">
+                    <i class="fas fa-ellipsis-h"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+</body>
+
+</html>
