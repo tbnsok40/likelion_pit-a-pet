@@ -43,15 +43,14 @@ chmod-socket=666
 - (esc) + (:wq)+(enter)
 
 
-uwsgi --ini uwsgi.ini
-sudo apt-get install nginx
-sudo vi /etc/nginx/nginx.conf
-http 웅앵 써줘야한다
-sudo vi /etc/nginx/sites-enabled/default 
-여기서 문서 또 수정해주고(경로)
-python manage.py collectstatic
-=> static 파일들을 모아준것.
-uwsgi --ini uwsgi.ini
-sudo service nginx reload
-
-퍼블릭 dns 복붙
+- uwsgi --ini uwsgi.ini
+- sudo apt-get install nginx
+- sudo vi /etc/nginx/nginx.conf
+#### http 웅앵 써줘야한다
+- sudo vi /etc/nginx/sites-enabled/default 
+#### 여기서 문서 또 수정해주고(경로)
+- python manage.py collectstatic
+#### => static 파일들을 모아준것.
+- uwsgi --ini uwsgi.ini
+- sudo service nginx reload
+#### 퍼블릭 dns 복붙
