@@ -1,3 +1,6 @@
+# ubuntu 삭제하는 법
+- rm -rf jssdeploy(프로젝트명)
+
 # 배포 step
 - sudo apt-get update
 - sudo apt-get install build-essential
