@@ -49,7 +49,7 @@ chmod-socket=666
 - uwsgi --ini uwsgi.ini
 - sudo apt-get install nginx
 - sudo vi /etc/nginx/nginx.conf
-#### http 웅앵 써줘야한다
+#### http  써줘야한다
 - sudo vi /etc/nginx/sites-enabled/default 
 #### 여기서 문서 또 수정해주고(경로)
 - python manage.py collectstatic
